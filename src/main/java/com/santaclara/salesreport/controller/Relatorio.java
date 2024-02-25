@@ -29,12 +29,15 @@ public class Relatorio {
         //this.params.put("IMAGEM_DIRETORIO", JASPER_DIRETORIO); 
         //this.params.put("REPORT_LOCALE", new Locale("pt", "BR"));
         this.params.put(key, value);
+        System.out.println("################################################");
+        System.out.println(" Verificando valor do hashmap params. ");
+        System.out.println(params.toString());
     }
 
     public byte[] gerarPdf() {
         byte[] bytes = null;
         try {                                                                         //proposta.jasper
-            Resource resource = resourceLoader.getResource(JASPER_DIRETORIO.concat("proposta.jasper"));
+            Resource resource = resourceLoader.getResource(JASPER_DIRETORIO.concat("pagina main.jasper"));
             InputStream stream = resource.getInputStream();
             System.out.println("#############################################################");
             System.out.println("O relatorio vai se preenchido agora.");
