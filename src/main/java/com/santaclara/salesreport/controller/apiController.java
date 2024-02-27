@@ -22,7 +22,7 @@ public class apiController {
         //String cpf = clienteService.buscarPorUsuarioId(user.getId()).getCpf();
         System.out.println("##################################################################################");
 		System.out.println("GetMapping Relatorio"); 
-        jasperReport.addParams("projetorFabricante", "Barco");
+        jasperReport.addParams("projetorFabricante", "Projetor: Chriestie");
         jasperReport.addParams("projetorModelo", "DP2K-23B");
         jasperReport.addParams("lente", "1,35");
         
